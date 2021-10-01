@@ -17,7 +17,7 @@
 [dependencies]
 #  ff = { version = "0.6.3", git = "https://github.com/algorand/ff-zeroize", features = ["derive"]}
   ff-zeroize = { version = "0.6.3", features = ["derive"]}
-  pairing-plus = { git = "https://github.com/algorand/pairing-plus"}
+  pairing-plus = { git = "https://github.com/algorand/pairing-plus", branch = "master"}
   sha2 = "0.8"
   libc = { version = "0.2", features = ["align"] }
   bigint = { version = "4", default-features = false }
@@ -36,8 +36,8 @@
   bencher = "0.1.5"
   criterion = "0.2.11"
   rand = "0.5"
-  rand_core = ""
-  rand_xorshift = ""
+  rand_core = "0.6.3"
+  rand_xorshift = "0.3.0"
 
 
 ## A set of benchmarks are available under the benches folder
