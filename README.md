@@ -37,6 +37,7 @@ This implementation uses bls12-381 curve.
 ## Use this library directly
 * Install rust and cargo toolchain
 * Build library: `cargo build --release`
+* Docker build library: `docker run --rm --user "$(id -u)":"$(id -g)" -v "$PWD":/usr/src/pointproofs -w /usr/src/pointproofs rust:1.67.1 cargo build --release`
 * Run example: `cargo run`
 * Run tests: `cargo test [-- --ignore] [--release]`
 * Benchmark: `cargo bench`
